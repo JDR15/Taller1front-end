@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/retos/reto2.css" />
+    <title>Reto 2</title>
+  </head>
+  <body>
+    <header>
+      <div class="container__menu">
+        <div class="logo">
+          <img src="../img/images.png" alt="" />
+        </div>
+        <div class="menu">
+          <nav>
+            <ul>
+              <li><a href="reto1.html">Reto 1</a></li>
+              <li><a href="reto2.html">Reto 2</a></li>
+              <li><a href="reto3.html">Reto 3</a></li>
+              <li><a href="reto4.html">Reto 4</a></li>
+              <li><a href="reto5.html">Reto 5</a></li>
+              <li><a href="reto6.html">Reto 6</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+<!-- MAIN -->
+
+    <section id="reto1">
+      <div class="title">
+        <div class="text">Conversor de temperatura</div>
+      </div>
+      <div class="content">
+        <form>
+          <div class="caja">
+            <div class="input-box">
+              <label class="details" for="temp">Ingresa la temperatura</label>
+              <input type="number" id="temp" name="temp" />
+            </div>
+          
+            <div class="input-box">
+              <label class="details" for="convD">Vas a convertir de:</label>
+              <select id="convD" name="convD">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+              </select>
+            </div>
+
+            <div class="input-box">
+              <label class="details" for="convA">Deseas convertir a:</label>
+              <select id="convA" name="convA">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+              </select>
+            </div>
+
+          </div>
+        </form>
+      </div>
+
+      <div class="button">
+        <button id="btn">Resultado</button>
+      </div>
+
+      <div class="resultado">
+
+      </div>
+
+    </section>
+
+  
+
+    <script src="../js/retosjs/reto2.js"></script>
+  </body>
+</html>

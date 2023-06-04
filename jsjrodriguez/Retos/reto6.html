@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/retos/reto6.css" />
+    <title>Reto 1</title>
+</head>
+
+<body>
+    <header>
+        <div class="container__menu">
+            <div class="logo">
+                <img src="../img/images.png" alt="" />
+            </div>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="reto1.html">Reto 1</a></li>
+                        <li><a href="reto2.html">Reto 2</a></li>
+                        <li><a href="reto3.html">Reto 3</a></li>
+                        <li><a href="reto4.html">Reto 4</a></li>
+                        <li><a href="reto5.html">Reto 5</a></li>
+                        <li><a href="reto6.html">Reto 6</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <div class="title">
+            <div class="text">Validación</div>
+        </div>
+        <div class="form">
+            <form id="form" >
+
+                <label for="">Tipo Documento</label>
+                <select name="" id="tipo">
+                    <option value="0">Selecciona una opcion</option>
+                    <option value="1">Cedula Ciudadania</option>
+                    <option value="2">Tarjeta Identidad</option>
+                    <option value="3">Pasaporte</option>
+                </select>
+
+                <div class="campodoc">
+                    <label for="">Documento</label>
+                    <input type="number" name="doc" id="doc">
+                    <div class="feedback"></div>
+                </div>
+
+                <div class="camponom">
+                    <label for="">Nombre</label>
+                    <input type="text" name="nom" id="nom">
+                    <div class="feedback"></div>
+                </div>
+
+                <div class="campoape">
+                    <label for="">Apellido</label>
+                    <input type="text" name="ape" id="ape">
+                    <div class="feedback"></div>
+                </div>
+
+                <div class="campofecha">
+                    <label for="">Fecha Nacimiento</label>
+                    <input type="date" id="fecha">
+                    <div class="feedback"></div>
+                </div>
+
+                <div class="campocor">
+                    <label for="">Correo</label>
+                    <input type="email" name="cor" id="cor">
+                    <div class="feedback"></div>
+                </div>
+
+                <div class="campopas">
+                    <label for="">Password</label>
+                    <input type="password" name="pas" id="pas">
+                    <div class="feedback"></div>
+                </div>
+
+                <div class="campocon">
+                    <label for="">Comprobar password</label>
+                    <input type="password" id="con">
+                    <div class="feedback"></div>
+                </div>
+
+                <div class="campocheck">
+                    <label class="one" for="termsCheckbox">Aceptar Términos de uso</label>
+                    <input class="check" type="checkbox" id="check" >
+                    <div class="feedback"></div>
+                </div>
+
+                <input type="submit" value="Enviar" name="env" id="env">
+
+            </form>
+            <div id = "ventana" class="modal">
+                <div class="contenidoModal">
+                  <span  id="cerraModal" class="cerraModal"><i class="fa-solid fa-xmark"></i></span>
+                  <h3>Terminos de Uso </h3>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci earum repellendus inventore veniam libero, suscipit praesentium! Necessitatibus eius, corporis soluta sequi modi aspernatur numquam facilis nisi reprehenderit, fugiat, maxime optio.</p>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste recusandae tempora exercitationem nihil ex. Accusamus necessitatibus esse eligendi excepturi eveniet, enim assumenda, rem laudantium harum ducimus nesciunt iure dolor minus!</p>
+                </div> 
+          
+              </div>
+
+</main>
+
+
+    <script src="../js/retosjs/reto6.js"></script>
+  </body>
+</html>

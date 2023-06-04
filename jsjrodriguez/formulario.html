@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form.css">
+    <title>Formulario</title>
+</head>
+<body>
+
+<div class="form">
+    <form  id="form">
+
+        <label for="">Tipo Documento</label>
+        <select name="" id="tipo">
+            <option value="0">Selecciona una opcion</option>
+            <option value="1">Cedula Ciudadania</option>
+            <option value="2">Tarjeta Identidad</option>
+            <option value="3">Pasaporte</option>
+        </select>
+
+        <div class="campodoc">
+            <label for="">Documento</label>
+            <input type="number" name="doc" id="doc">
+            <div class="feedback"></div>
+        </div>
+
+        <div class="camponom">
+            <label for="">Nombre</label>
+            <input type="text" name="nom" id="nom">
+            <div class="feedback"></div>
+        </div>
+
+        <div class="campoape">
+            <label for="">Apellido</label>
+            <input type="text" name="ape" id="ape">
+            <div class="feedback"></div>
+        </div>
+
+        <div class="campocor">
+            <label for="">Correo</label>
+            <input type="email" name="cor" id="cor">
+            <div class="feedback"></div>
+        </div>
+
+        <div class="campopas">
+            <label for="">Password</label>
+            <input type="password" name="pas" id="pas">
+            <div class="feedback"></div>
+        </div>
+
+        <input type="submit" value="Enviar" name="env" id="env">
+
+    </form>
+</div>
+<script src="js/form.js"></script>
+</body>
+</html>

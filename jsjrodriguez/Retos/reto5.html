@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/retos/reto5.css" />
+    <title>Reto 5</title>
+  </head>
+  <body>
+
+    <header>
+      <div class="container__menu">
+        <div class="logo">
+          <img src="../img/images.png" alt="" />
+        </div>
+        <div class="menu">
+          <nav>
+            <ul>
+              <li><a href="reto1.html">Reto 1</a></li>
+              <li><a href="reto2.html">Reto 2</a></li>
+              <li><a href="reto3.html">Reto 3</a></li>
+              <li><a href="reto4.html">Reto 4</a></li>
+              <li><a href="reto5.html">Reto 5</a></li>
+              <li><a href="reto6.html">Reto 6</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <div class="title">
+      <div class="text">Figuras Geométricas</div>
+    </div>
+
+    <section id="reto">
+
+        <div class="content">
+            <div class="caja">
+                <div class="input-box">
+                    <h3>Circulo</h3>
+                    <div class="img">
+                        <img src="../img/circulo.png" alt="">
+                    </div>
+                    <input type="submit" id="circulop" name="pal" value="Perímetro" />
+                    <input type="submit" id="circuloa" name="pal" value="Área" />
+        
+                </div>
+        
+            </div>
+        
+        </div>
+        
+        
+        <div class="content_">
+            <div class="caja_">
+                <div class="input-boxx">
+                    <h3>Triángulo</h3>
+                    <div class="img">
+                        <img src="../img/triangulo.png" alt="">
+                    </div>
+                    <input type="submit" id="triangulop"  value="Perímetro" />
+                    <input type="submit" id="trianguloa"  value="Área" />
+        
+                </div>
+        
+            </div>
+        
+        </div>
+        
+        <div class="content__">
+            <div class="caja__">
+                <div class="input-box_">
+                    <h3>Rectángulo</h3>
+                    <div class="img">
+                        <img src="../img/rectangulo.png" alt="">
+                    </div>
+                    <input type="submit" id="rectangulop" name="pal" value="Perímetro" />
+                    <input type="submit" id="rectanguloa" name="pal" value="Área" />
+        
+                </div>
+        
+            </div>
+        
+        </div>
+
+
+        <div class="content-">
+            <div class="caja-">
+                <div class="input-box-">
+                    <h3>Cuadrado</h3>
+                    <div class="img">
+                        <img src="../img/cuadrado.png" alt="">
+                    </div>
+                    <input type="submit" id="cuadradop" name="pal" value="Perímetro" />
+                    <input type="submit" id="cuadradoa" name="pal" value="Área" />
+        
+                </div>
+        
+            </div>
+        
+        </div>
+    
+    </section>
+
+
+    <!-- VENTANAS MODALES -->
+
+    <div id = "ventana" class="modal">
+      <div class="contenidoModal">
+        <span  id="cerraModal" class="cerraModal"><i class="fa-solid fa-xmark"></i></span>
+        <div class="input">
+          <h3>Circulo</h3>
+          <label class="details" for="radio">Ingrese el radio:</label>
+          <input type="number" id="radio" name="radio" />
+        </div>
+        <div class="cont">
+        <div class="button">
+          <button onclick="calcularPerimetro()">Calcular Perímetro</button>
+        </div>
+
+        <div class="button_">
+          <button onclick="calcularArea()">Calcular Área</button>
+        </div>
+        </div>
+      <div class="resultado"></div>
+      </div>
+
+    </div>
+
+
+    <div id = "ventana-2" class="modal-2">
+      <div class="contenidoModal-2">
+        <span  id="cerraModal-2" class="cerraModal-2"><i class="fa-solid fa-xmark"></i></span>
+        <div class="input-2">
+          <h3>Triángulo</h3>
+          <label class="details-2" for="ladoA">Ingrese el lado A:</label>
+          <input type="number" id="ladoA" name="ladoA" />
+
+          <label class="details-2" for="ladoB">Ingrese el lado B:</label>
+          <input type="number" id="ladoB" name="ladoB" />
+
+          <label class="details-2" for="ladoC">Ingrese el lado C:</label>
+          <input type="number" id="ladoC" name="ladoC" />
+
+        </div>
+        <div class="cont">
+        <div class="button">
+          <button onclick="calcularPerimetroT()">Calcular Perímetro</button>
+        </div>
+
+        <div class="button_">
+          <button onclick="calcularAreaT()">Calcular Área</button>
+        </div>
+        </div>
+      <div class="resultado-2"></div>
+      </div>
+
+    </div>
+
+
+    <div id = "ventana-3" class="modal-3">
+      <div class="contenidoModal-3">
+        <span  id="cerraModal-3" class="cerraModal-2"><i class="fa-solid fa-xmark"></i></span>
+        <div class="input-3">
+          <h3>Rectángulo</h3>
+          <label class="details-3" for="largo">Ingrese el largo:</label>
+          <input type="number" id="largo" name="largo" />
+        
+          <label class="details-3" for="ancho">Ingrese el ancho:</label>
+          <input type="number" id="ancho" name="ancho" />
+        
+        
+        </div>
+        <div class="cont">
+        <div class="button">
+          <button onclick="calcularPerimetroR()">Calcular Perímetro</button>
+        </div>
+
+        <div class="button_">
+          <button onclick="calcularAreaR()">Calcular Área</button>
+        </div>
+        </div>
+      <div class="resultado-3"></div>
+      </div>
+
+    </div>
+
+
+    <div id = "ventana-4" class="modal-4">
+      <div class="contenidoModal-4">
+        <span  id="cerraModal-4" class="cerraModal"><i class="fa-solid fa-xmark"></i></span>
+        <div class="input-4">
+          <h3>Cuadrado</h3>
+          <label class="details-4" for="lado">Ingrese el lado:</label>
+          <input type="number" id="lado" name="lado" />
+        </div>
+        <div class="cont">
+        <div class="button">
+          <button onclick="calcularPerimetroC()">Calcular Perímetro</button>
+        </div>
+
+        <div class="button_">
+          <button onclick="calcularAreaC()">Calcular Área</button>
+        </div>
+        </div>
+      <div class="resultado-4"></div>
+      </div>
+
+    </div>
+
+    <script src="../js/retosjs/reto5.js"></script>
+  </body>
+</html>

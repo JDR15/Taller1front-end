@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Calculadora con JavaScript</title>
+  </head>
+  <body>
+    <header>
+      <div class="container__menu">
+        <div class="logo">
+          <img src="img/images.png" alt="" />
+        </div>
+        <div class="menu">
+          <nav>
+            <ul>
+              <li><a href="#">Ejemplo</a></li>
+              <li><a href="#">Ejemplo</a></li>
+              <li><a href="#">Ejemplo</a></li>
+              <li><a href="#">Ejemplo</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section id="calculadora">
+      <div class="title">
+        <div class="text">Ejemplo</div>
+      </div>
+      <div class="content">
+        <form action="">
+          <div class="caja">
+            <div class="input-box">
+            <label  class="details" for="num">Ingresa el primer numero</label>
+            <input type="text" id="num1" name="num1" />
+            </div>
+
+            <div class="input-box">
+            <label class="details" for="num">Ingresa el segundo numero</label>
+            <input type="text" id="num2" name="num2" />
+            </div>
+
+            <div class="input-box">
+            <label class="details" for="op">Operación</label>
+            <select class="input-boxx" name="op" id="op">
+              <option value="1">Suma</option>
+              <option value="2">Resta</option>
+              <option value="3">Multiplicación</option>
+              <option value="4">División</option>
+            </div>
+            </select>
+          </div>
+        </form>
+      </div>
+    <div class="button">
+        <button id="btnCalcular">Calcular</button>
+    </div>
+    
+      <div class="resultado">
+      </div>
+
+    </section>
+
+    <script src="js/calculadora2.js"></script>
+  </body>
+</html>

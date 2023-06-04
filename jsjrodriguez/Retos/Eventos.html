@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/retos/event.css">
+    <title>Eventos JavaScript</title>
+</head>
+<body>
+
+    <div class="container">
+        <table>
+            <thead>
+                <th>Evento</th>
+                <th>Ejemplo</th>
+            </thead>
+    
+            <tbody>
+                <tr>
+                    <td>Click</td>
+                    <td>
+                        <button onclick="alert('Haz hecho click')"> Click </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mouseover</td>
+                    <td>
+                        <div style="width: 100px;" onmouseover="this.style.backgroundColor='blue'"
+                            onmouseout="this.style.backgroundColor=''">
+                            Pasar ratón 
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Keydown</td>
+                    <td>
+                        <input type="text" onkeydown="console.log(event.keyCode)" placeholder="Escribe">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Submit</td>
+                    <td>
+                        <form onsubmit="alert('Enviado'); return false;">
+                            <input type="submit" value="Enviar">
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Load</td>
+                    <td>
+                        <img src="imagen.jpg" onload="console.log('La imagen se ha cargado')">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Focus</td>
+                    <td>
+                        <input type="text" onfocus="this.style.backgroundColor='blue'"
+                            onblur="this.style.backgroundColor='white'" placeholder="Haz click">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Change</td>
+                    <td>
+                        <select onchange="console.log('Cambio el valor')">
+                            <option value="1">Opción 1</option>
+                            <option value="2">Opción 2</option>
+                            <option value="3">Opción 3</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Scroll</td>
+                    <td>
+                        <div style="width: 200px; height: 100px; overflow: auto;" onscroll="console.log('Scrolling')">
+                            Contenido <br>
+                            Contenido <br>
+                            Contenido <br>
+                            Contenido <br>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Dblclick</td>
+                    <td>
+                        <button ondblclick="alert('Doble click')">Haz doble click </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Resize</td>
+                    <td>
+                        <script>
+                            window.onresize = function () {
+                                console.log('La ventana se ha redimensionado');
+                            };
+                        </script>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
